@@ -1,0 +1,141 @@
+.modal{
+	position: fixed;
+	z-index: 10;
+	inset: 0;
+	background-color: rgb(0, 0, 0, 0.50);
+	cursor: pointer;
+	padding: 30px;
+	overflow-y: auto;
+	display: flex;
+}
+
+.modal__main{
+	position: relative;
+	margin: auto;
+	cursor: default;
+}
+.modal__close{
+	background-color: transform;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+.detail{
+	background-color:rgb(255, 255, 255);
+	border-radius: 16px;
+	max-width: 780px;
+	box-shadow: 0px 10px 50px 0px rgba(4, 0, 49, 0.1);
+	padding: 36px 36px 80px;
+	height: auto;
+}
+.detail__header{
+	display: grid;
+	grid-template-columns: 101px 1fr;
+	gap: 12px 20px;
+	margin-bottom: 32px;
+}
+.detail__logo{
+	width: 100%;
+	max-height: 101px;
+	grid-row: 1 / 3;
+	align-self: center;
+	justify-self: start;
+}
+.detail__compani{
+	font-size: 32px;
+	letter-spacing: 0.64px;
+	align-self: none;
+	justify-self: start;
+}
+.detail__item{
+	font-size: 20px;
+	align-self: start;
+	justify-self: start;
+	border-radius: 4px;
+	background-color: rgb(234, 236, 255);
+	padding: 5px 10px;
+}
+.detail__main{
+	display: flex;
+	gap: 20px;
+	margin-bottom: 32px;
+}
+.detail__description{
+	max-width: 465px;
+	line-height: 1.4;
+}
+.ditail__fields{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 4px;
+}
+.ditail__field{
+	border-radius: 30px;
+	background: rgb(234, 236, 255);
+	padding: 3px 10px;
+}
+.ditail__resume{
+	line-height: 1.4;
+}
+@media (max-width: 940px) {
+	.detail{
+		max-width: 680px;
+		padding: 24px 24px 72px;
+	}
+	.detail__main{
+		gap: 10px;
+	}
+	.detail__description{
+		max-width: 418px;
+	}
+}
+@media (max-width: 640px) {
+	.modal{
+		padding: 30px 15px;
+	}
+	.detail{
+		padding: 24px 15px;
+	}
+	.detail__header{
+	grid-template-columns: 60px 1fr;
+	gap: 4px 8px;
+	margin-top: 24px;
+	}
+	.detail__compani{
+		font-size: 20px;
+		letter-spacing: 0.4px;
+	}
+	.detail__main{
+		flex-direction: column;
+		gap: 24px;
+		margin-bottom: 24px;
+		
+	}
+	.detail__description{
+		max-width: 100%;
+	}
+}
+
+.detail__tg{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.detail__input{
+	width: 180px;
+	font-size: 14px;
+	height: 32px;
+	padding: 0 16px;
+	border-radius: 16px;
+	border: 1px solid #ccc;
+}
+.detail__btn{
+	border-radius:16px;
+	background-color:#3390ec;
+	border-radius: 16px;
+	padding: 4px 16px;
+	color: #fff;
+}

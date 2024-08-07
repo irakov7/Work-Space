@@ -1,0 +1,51 @@
+.footer{
+	padding: 50px 0 40px;
+}
+.footer__container{
+	display: grid;
+	gap: 27px;
+	grid-template-areas: 
+	"logo ."
+	"copyright contacts";
+}
+.footer__logo{
+	grid-area: logo;
+}
+.footer__copyright{
+	grid-area: copyright;
+}
+.footer__contacts{
+	grid-area: contacts;
+	justify-self: end;
+	min-width: 180px;
+}
+.footer__contact{
+	margin-bottom: 8px;
+}
+.footer__contact:last-child{
+	margin-bottom: 0;
+}
+.footer__link:hover{
+	color: blue;
+}
+@media (max-width: 1140px){
+	.footer{
+	padding: 40px 0 32px;
+	}
+}
+@media (max-width: 940px){
+	.footer{
+		padding: 30px 0 24px;
+	}
+}
+@media (max-width: 640px){
+	.footer{
+		padding-top: 20px;
+	}
+	.footer__container{
+		grid-template-areas: 'logo' 'copyright' 'contacts';
+	}
+	.footer__contacts{
+		justify-self: start;
+	}
+}

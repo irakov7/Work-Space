@@ -1,0 +1,37 @@
+.checkbox{
+	position: relative;
+	display: block;
+	line-height: 20px;
+	padding-left: 28px;
+
+}
+.checkbox__input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	border-radius: 4px;
+	
+}
+.checkbox__input:after{
+	content:'';
+	position: absolute;
+	inset: 0;
+	display: block;
+	background: url('../img/check.svg') no-repeat center;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+.checkbox__input:checked:after{
+	opacity: 1;
+}
+.checkbox__input:hover:not(:disabled) {
+	outline: none;
+	box-shadow: 0px 2px 10px rgba(166, 173, 255, 0.55);
+}

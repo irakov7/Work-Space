@@ -1,0 +1,29 @@
+.vacancy{
+	background-color: rgb(255, 255, 255);
+	border-radius: 16px;
+	padding: 16px;
+	height: 100%;
+	cursor: pointer;
+}
+.vacancy__img{
+	max-height: 44px;
+	margin-bottom: 12px;
+	display: block;
+}
+.vacancy__company{
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+.vacancy__title{
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 4px;
+	background-color:#EAECFF;
+	margin-bottom: 8px;
+}
+.vacancy__field{
+	color: #ccc;
+	font-size: 14px;
+}

@@ -1,0 +1,68 @@
+.vacancies__cards{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.vacancies{
+	padding: 50px 0;
+}
+.vacancies__container{
+	display: flex;
+	align-items: start;
+	gap: 24px 20px;
+}
+.vacancies__filter-btn{
+	display: none;
+}
+.vacancies__filter{
+	flex: 0 0 280px;
+}
+.vacancies__cards{
+	flex-basis: 100%;
+}
+
+@media (max-width: 1140px){
+	.vacancies{
+		padding: 40px 0;
+	}
+}
+@media (max-width: 940px){
+	.vacancies{
+		padding: 30px 0;
+	}
+	.vacancies__container{
+		flex-direction: column;
+		row-gap: 0;	
+	}
+	.vacancies__filter-btn{
+		display: flex;
+		align-items: center;
+		margin-bottom: 24px;
+		color: rgb(42, 24, 255);
+	}
+	.vacancies__filter-btn::after{
+		content: '';
+		display: block;
+		background: url('../img/arrow.svg') no-repeat center;
+		width: 20px;
+		height: 20px;
+	}
+	.vacancies__filter-btn_active::after{
+		transform: rotate(180deg);
+	}
+	.vacancies__filter{
+		width: 100%;
+		flex-basis: auto;
+		height: 0;
+		overflow: hidden;
+		transition: height 0.4s ease-in-out;
+	}
+	.vacancies__filter_active{
+		height: auto;
+		margin-bottom: 40px;
+	}
+	.vacancies__cards{
+		padding-top: 8px;
+		width: 100%;
+	}
+}
